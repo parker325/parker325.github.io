@@ -4,26 +4,41 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
+
 	<style type="text/css">
-		#box{
-			height: 500px;
-			width: 500 px;
-			background-color: yellowgreen;
+		#writing{
+			font-size: 75px;
+			color: blue;
 		}
+		#text{
+			font-size: 50px;
+			color: blue;
 
-
+		}
 	</style>
 </head>
 <body>
-<div id = box ></div>
-<script type="text/javascript">
-	var footballteams = ["Giants", "Jets", "Eagles", "Cowboys", "49ers", "Chiefs", "Bengals"]
-	document.addEventListener("click", function(){
 
-	var random = Math.round(Math.random()*5)
-	box.innerText = footballteams[random]
-	
+<center>
+	<p>
+	Hello, click to see what team in the NFL will win the super bowl
+</p>
+</center>
+
+
+<center>
+	<div id="text"></div>
+</center>
+
+<script type="text/javascript">
+	var teams = ["Giants", "Vikings", "Bucs", "Eagles", "Cowboys", "Seahawks", "49ers", "Chiefs", "Bengals", "Bills", "Ravens", "Dolphins", "Jags", "Chargers"]
+
+	document.addEventListener("click", function(){
+		var number =  Math.round(Math.random()*11)
+		console.log(number)
+		text.innerText = teams [number] ;
 	})
 </script>
+
 </body>
 </html>
