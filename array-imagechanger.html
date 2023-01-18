@@ -7,13 +7,29 @@
 
 	<style type="text/css">
 		#writing{
-			font-size: 75px;
-			color: blue;
+			font-size: 100px;
+			color: black;
+			font-family: cursive;
 		}
 		#text{
 			font-size: 50px;
-			color: blue;
+			color: lightcyan;
+			width: 600px;
+			height: 600px;
+			border: 1px solid black;
+			background-size: cover;
+			font-family: cursive;
 
+		}
+
+		p{
+			color: white;
+			font-size: 50;
+			font-family: cursive;
+		}
+
+		body{
+			background-color: black;
 		}
 	</style>
 </head>
@@ -33,12 +49,14 @@
 <script type="text/javascript">
 	var teams = ["Giants", "Eagles", "Cowboys", "49ers", "Chiefs", "Bengals", "Bills",  "Jags",]
 
-		var teamimage = ["url(giants.png)", "url(eagles.jpg)", "url(cowboys.png)", "url(49ers.png)", "url(chiefs.png)", "url(bengals.png)", "url(bills.png)", "url(jags.png)",]
+		var teamimage = ["url(giants.png)", "url(eagles.png)", "url(cowboys.png)", "url(49ers.png)", "url(chiefs.png)", "url(bengals.png)", "url(bills.png)", "url(jags.png)"]
 
 	document.addEventListener("click", function(){
 		var number =  Math.round(Math.random()*8)
 		console.log(number)
+		text.style.backgroundImage = teamimage[number] ;
 		text.innerText = teams[number] ;
+
 	})
 </script>
 
