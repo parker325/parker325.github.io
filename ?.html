@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <style>
+      .box {
+        width: 1000px;
+        height: 1000px;
+        background-color: hotpink;
+      }
+
+      #h1{
+        position: absolute;
+      }
+
+      
+    </style>
+  </head>
+  <body>
+
+    
+    <div class="box">
+      <h1>Welcome! Click My Div!</h1>
+    </div>
+    <script>
+      let box = document.querySelector('.box');
+      box.addEventListener('click', () => {
+        box.style.backgroundColor = 'green';
+      });
+    </script>
+  </body>
+</html>
