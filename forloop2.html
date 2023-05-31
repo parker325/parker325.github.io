@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		.smyth{
+			height:50px;
+			width:50px;
+			background-size: contain;
+			border-radius: 50%;
+			background-image: url(smyth.jpeg);
+			background-repeat: no-repeat;
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+
+	
+
+	<script type="text/javascript">
+		
+		function makeSmyth (){
+			var smyth = document.createElement("div")
+				;
+			document.body.appendChild(smyth)
+			smyth.classList.add("smyth")
+
+
+
+		}
+		makeSmyth()
+
+		for (var i=0;i<100;i=i+1)
+			{makeSmyth()}
+
+
+	</script>
+
+</body>
+</html>

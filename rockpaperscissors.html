@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Rock Paper Scissors Game</title>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  text-align: center;
+  font-family: arial;
+}
+
+#scoreboard {
+  text-align: center;
+  font-family: arial;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#buttons {
+  text-align: center;
+}
+
+button {
+  background-color: red;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+</style>
+
+<script>
+var userScore = 0;
+var computerScore = 0;
+
+//generates a random number between 0 and 2
+function generateComputerChoice(){
+  return Math.floor(Math.random() * 3);
+}
+
+//compares the user and computer choices to determine the winner
+function compareChoices(userChoice, computerChoice)
+

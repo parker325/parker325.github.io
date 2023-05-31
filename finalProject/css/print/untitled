@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	.card {
+	background-color: pink;
+	color: white;
+	text-align: center;
+	padding: 50px;
+	margin: 50px;
+	border-radius: 25px;
+	box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+	margin-top: 30px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+</style>
+<head>
+	<title>Happy Mother's Day!</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="card">
+		<h1>Happy Mother's Day!</h1>
+		<p>Thank you for everything you do. You are appreciated more than you know.</p>
+		<div class="image-container">
+			<img src="your-image.jpg" alt="Your Image">
+		</div>
+	</div>
+</body>
+</html>
